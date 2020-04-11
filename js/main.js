@@ -129,14 +129,32 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-// Login JS
 
+
+
+// Nazorat
+function Nazorat () {
+  let n =document.querySelectorAll(".nazorat");
+
+  for (var i = 0; i < n.length; i++) {
+
+    if (n[i].style.color === 'red'&&n[i].innerHTML==="Nazorat qo'yilgan ") {
+      n[i].style.color = 'green'
+      n[i].innerHTML="Nazoratda emas"
+    } else {
+      n[i].style.color = 'red'
+      n[i].innerHTML="Nazorat qo'yilgan "
+    }
+  }
+}
+
+// Login form
 
 (function ($) {
     "use strict";
 
 
-     /*==================================================================
+    /*==================================================================
     [ Focus input ]*/
     $('.input100').each(function(){
         $(this).on('blur', function(){
@@ -187,34 +205,7 @@ function openCity(evt, cityName) {
         }
     }
 
-    function showValidate(input) {
-        var thisAlert = $(input).parent();
-
-        $(thisAlert).addClass('alert-validate');
-    }
-
-    function hideValidate(input) {
-        var thisAlert = $(input).parent();
-
-        $(thisAlert).removeClass('alert-validate');
-    }   
-    
+   
+   
 
 })(jQuery);
-
-
-// Nazorat
-function Nazorat () {
-  let n =document.querySelectorAll(".nazorat");
-
-  for (var i = 0; i < n.length; i++) {
-
-    if (n[i].style.color === 'red'&&n[i].innerHTML==="Nazorat qo'yilgan ") {
-      n[i].style.color = 'green'
-      n[i].innerHTML="Nazoratda emas"
-    } else {
-      n[i].style.color = 'red'
-      n[i].innerHTML="Nazorat qo'yilgan "
-    }
-  }
-}
