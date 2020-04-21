@@ -2045,7 +2045,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #212529;
+  color: white;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -3796,7 +3796,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  /*background-color: #fff;*/
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
@@ -3816,11 +3816,13 @@ input[type="button"].btn-block {
   flex: 1 1 auto;
   padding: 1.25rem;
   font-size: 15px; 
-  color: black;
+  color: white;
 }
 
 .card-title {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.75rem; 
+
+}
 
 .card-subtitle {
   margin-top: -0.375rem;
@@ -3838,7 +3840,7 @@ input[type="button"].btn-block {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(165,163,163,0.4);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
    }
   .card-header:first-child {
@@ -8785,7 +8787,7 @@ input[type=submit]:active {
 }
 .tabcontent{
   padding: 15px;
-  background-color: rgba(165,163,163,0.5);
+  /*background-color: rgba(165,163,163,0.5);*/
 
 }
 .nazorat{
